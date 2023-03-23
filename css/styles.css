@@ -111,6 +111,7 @@ p.subtitle {
 div.text-container {
     display: flex;
 	flex-direction: column;
+	padding-top: 3rem;
     justify-content: center;
     align-items: center;
     height: 100%;;
