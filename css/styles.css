@@ -115,7 +115,7 @@ div.text-container {
 
 div.image-container {
 	margin-top: -2rem;
-	margin-bottom: -4rem;
+	margin-bottom: -2rem;
 }
 
 
@@ -246,6 +246,11 @@ header p {
 		border-top-left-radius: 0;
 		border-bottom-left-Åradius: 0;
 		vertical-align: top;
+	}
+
+	div.image-container {
+			margin-bottom: -4rem;
+		}
 	}
 	/* end of header */
 
