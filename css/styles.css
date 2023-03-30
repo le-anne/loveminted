@@ -225,7 +225,6 @@ header p {
     transform: scale(0.75);
     width: 500px;
     height: 590px;
-    margin-left: -40px;
   }
   p.signup {
     margin-bottom: -2.5em;
