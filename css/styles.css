@@ -1,322 +1,333 @@
-/* Description: Master CSS file */
-
-/*****************************************
-Table Of Contents:
-- General Styles
-- Header
-- Media Queries
-******************************************/
-
-/*****************************************
-Colors:
-- Body text - white #dee3e6
-- Heading text - white #ffffff
-- Buttons, icons - blue #0984e3
-******************************************/
-
-
-/**************************/
-/*     General Styles     */
-/**************************/
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body,
 html {
-    width: 100%;
-	height: 100%;
-	background: linear-gradient(to bottom right, rgba(27, 34, 37, 0), rgba(15, 19, 21, 0)), url('../images/header-background.png') center center no-repeat;
-	background-size: cover;
-	text-align: center;
+  width: 100%;
+  height: 111%;
+  background: linear-gradient(
+      to bottom right,
+      rgba(27, 34, 37, 0),
+      rgba(15, 19, 21, 0)
+    ),
+    url("../images/header-background.png") center center no-repeat;
+  background-size: cover;
+  text-align: center;
 }
 
-body, p {
-	color: #423F32; 
-	font: 400 1rem/1.625rem "Poppins", sans-serif;
+body,
+p {
+  color: #423f32;
+  font: 400 1rem/1.625rem "Poppins", sans-serif;
 }
 
 h1 {
-	color: #ffffff;
-	font-weight: 600;
-	font-size: 3.25rem;
-	line-height: 3.75rem;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 3.25rem;
+  line-height: 3.75rem;
 }
 
 h2 {
-	color: #ffffff;
-	font-weight: 600;
-	font-size: 2.5rem;
-	line-height: 3.25rem;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
 }
 
 h3 {
-	color: #ffffff;
-	font-weight: 600;
-	font-size: 1.875rem;
-	line-height: 2.5rem;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.875rem;
+  line-height: 2.5rem;
 }
 
 h4 {
-	color: #ffffff;
-	font-weight: 600;
-	font-size: 1.5rem;
-	line-height: 2.125rem;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2.125rem;
 }
 
 h5 {
-	color: #ffffff;
-	font-weight: 600;
-	font-size: 1.25rem;
-	line-height: 1.625rem;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
 }
 
 h6 {
-	color: #ffffff;
-	font-weight: 600;
-	font-size: 1rem;
-	line-height: 1.375rem;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.375rem;
 }
 
 .p-small {
-	font-size: 0.875rem;
-	line-height: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
 }
 
 .p-large {
-	font-size: 1.125rem;
-	line-height: 1.75rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 p.subtitle {
-	margin-bottom: 0;
-	margin-top: 1em;
-
+  margin-bottom: 0;
+  margin-top: 1em;
 }
 
 p.signup {
-	margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 .container {
-    margin: -2.5rem auto;
+  margin: -2.5rem auto;
 }
 
 .flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-
-
 div.text-container {
-    display: flex;
-	flex-direction: column;
-	padding-top: 3rem;
-    justify-content: center;
-    align-items: center;
-    height: 100%;;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 div.image-container {
-	margin-top: -2rem;
-	margin-bottom: -2rem;
+  margin-top: -2rem;
+  margin-bottom: -2rem;
 }
 
-
 img {
-	max-width: 100%;
-	vertical-align: middle; /* solves a gap when inside image-container */
+  max-width: 100%;
+  vertical-align: middle; /* solves a gap when inside image-container */
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .li-space-lg li {
-	margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 a {
-	color: #dee3e6;
-	text-decoration: underline;
+  color: #dee3e6;
+  text-decoration: underline;
 }
 
 a:hover {
-	color: #dee3e6;
-	text-decoration: underline;
+  color: #dee3e6;
+  text-decoration: underline;
 }
 
 .no-line,
 .no-line:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .form-group {
-	margin-bottom: 1.25rem;
+  margin-bottom: 0px;
 }
 
 .form-control {
-	display: block;
-    width: 100%;
-	height: calc(3.5rem + 2px);
-    padding: 1rem 1.25rem;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5;
-	font-family: "Poppins";
-	color: #423F32;
-    background-color: #ffffff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border-radius: 4px;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  display: block;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: "Poppins";
+  color: #423f32;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 4px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form {
+  margin-left: 0px;
 }
 
 .form-control:hover {
-	border: 1px solid #a1a1a1;
+  border: 1px solid #a1a1a1;
 }
 
 .form-control-submit-button {
-	display: inline-block;
-	width: 100%;
-	height: 3.625rem;
-	border: 1px solid #E37383;
-	border-radius: 4px;
-	background-color: #E37383;
-	color: #ffffff;
-	font-weight: 400;
-	font-size: 1rem;
-	line-height: 0;
-	font-family: "Poppins";
-	cursor: pointer;
-	transition: all 0.2s;
+  display: inline-block;
+  width: 100%;
+  height: 3.625rem;
+  border: 1px solid #e37383;
+  border-radius: 4px;
+  background-color: #e37383;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 0;
+  font-family: "Poppins";
+  cursor: pointer;
+  transition: all 0.2s;
 }
 
 .form-control-submit-button:hover {
-	border: 2px solid #E37383;
-	background-color: transparent;
-	color: #E37383;
+  border: 2px solid #e37383;
+  background-color: transparent;
+  color: #e37383;
 }
-
 
 /******************/
 /*     Header     */
 /******************/
 header {
-	padding-top: 5rem;
-	padding-bottom: 10rem;
+  padding-top: 5rem;
+  padding-bottom: 0;
 }
 
 header .text-container {
-	margin-bottom: 4rem;
+  margin-bottom: 4rem;
 }
 
 header .h1-large {
-	margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 header p {
-	margin-bottom: 2.75rem;
+  margin-bottom: 2.75rem;
 }
-
 
 /*************************/
 /*     Media Queries     */
-/*************************/	
+/*************************/
+
+@media (max-width: 767px) {
+  body,
+  html {
+    width: 100%;
+    height: 115%;
+  }
+  .form {
+    transform: scale(0.75);
+    width: 500px;
+    height: 590px;
+    margin-left: -40px;
+  }
+  p.signup {
+    margin-bottom: -2.5em;
+  }
+  header {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
 /* Min-width 768px */
 @media (min-width: 768px) {
+  body,
+  html {
+    width: 100%;
+    height: 100%;
+  }
+  /* Header */
+  header .form-group {
+    display: inline-block;
+    width: 300px;
+  }
 
-	/* Header */
-	header .form-group {
-		display: inline-block;
-		width: 300px;
-	}
-	
-	header .form-control {
-		border-top-right-radius: 0;
-		border-bottom-right-radius: 0;
-	}
-	
-	header .form-control-submit-button {
-		display: inline-block;
-		width: 150px;
-		margin-left: -4px;
-		border-top-left-radius: 0;
-		border-bottom-left-Åradius: 0;
-		vertical-align: top;
-	}
+  header .form-control {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 
-	div.image-container {
-			margin-bottom: -4rem;
-		}
-	}
-	/* end of header */
+  header .form-control-submit-button {
+    display: inline-block;
+    width: 150px;
+    margin-left: -4px;
+    border-top-left-radius: 0;
+    border-bottom-left-åradius: 0;
+    vertical-align: top;
+  }
 
+  div.image-container {
+    margin-bottom: -4rem;
+  }
+  .form {
+    margin-left: -135px;
+  }
 }
-/* end of min-width 768px */
+/* end of header */
 
+/* end of min-width 768px */
 
 /* Min-width 992px */
 @media (min-width: 992px) {
-	
-	/* General Styles */
-	.container {
-		max-width: 1140px;
-	}
+  /* General Styles */
+  .container {
+    max-width: 1140px;
+  }
 
-	.grid {
-		grid-template-columns: repeat(2, 1fr);
-	}
-	
-	.p-heading {
-		width: 36rem;
-		margin-right: auto;
-		margin-left: auto;
-	}
-	/* end of general styles */
+  .form {
+    margin-left: -135px;
+  }
 
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-	/* Header */
-	header {
-		padding-top: 10rem;
-		padding-bottom: 10rem;
-		text-align: left;
-	}
+  .p-heading {
+    width: 36rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  /* end of general styles */
 
-	header .text-container {
-		margin-bottom: 0;
-	}
+  /* Header */
+  header {
+    padding-top: 10rem;
+    padding-bottom: 0rem;
+    text-align: left;
+  }
 
-	header .h1-large {
-		font-size: 4rem;
-		line-height: 4.5rem;
-	}
-	/* end of header */
+  header .text-container {
+    margin-bottom: 0;
+  }
 
+  header .h1-large {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+  /* end of header */
 }
 /* end of min-width 992px */
 
-
 /* Min-width 1200px */
 @media (min-width: 1200px) {
-	
-	/* Header */
-	header .text-container {
-		margin-right: 2rem;
-	}
+  /* Header */
+  header .text-container {
+    margin-right: 2rem;
+  }
 
-	header .image-container {
-		margin-left: 3rem;
-	}
-	/* end of header */
+  header .image-container {
+    margin-left: 3rem;
+  }
 
+  .form {
+    margin-left: -135px;
+  }
+  /* end of header */
 }
 /* end of min-width 1200px */

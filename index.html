@@ -1,68 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
-        <!-- SEO Meta Tags -->
-        <meta name="description" content="LoveMinted ">
-        <meta name="author" content="Leanne Schwers">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-        <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
-        <meta property="og:site_name" content="LoveMinted" /> <!-- website name -->
-        <meta property="og:site" content="www.loveminted.us" /> <!-- website link -->
-        <meta property="og:title" content="LoveMinted"/> <!-- title shown in the actual shared post -->
-        <meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-        <meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-        <meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-        <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="LoveMinted " />
+    <meta name="author" content="Leanne Schwers" />
 
-        <!-- Webpage Title -->
-        <title>LoveMinted</title>
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
+    <meta property="og:site_name" content="LoveMinted" />
+    <!-- website name -->
+    <meta property="og:site" content="www.loveminted.us" />
+    <!-- website link -->
+    <meta property="og:title" content="LoveMinted" />
+    <!-- title shown in the actual shared post -->
+    <meta property="og:description" content="" />
+    <!-- description shown in the actual shared post -->
+    <meta property="og:image" content="" />
+    <!-- image link, make sure it's jpg -->
+    <meta property="og:url" content="" />
+    <!-- where do you want your post to link to -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- to have large image post format in Twitter -->
 
-        <!-- Scripts -->
+    <!-- Webpage Title -->
+    <title>LoveMinted</title>
 
-        <script type="text/javascript" charset="utf-8" src="static/'%NODE_ENV%'==='production'?'vendors.min.js':'vendors.js'"></script>
+    <!-- Scripts -->
 
-        
-        <!-- Styles -->
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-        <link href="css/styles.css" rel="stylesheet">
+    <script
+      type="text/javascript"
+      charset="utf-8"
+      src="static/'%NODE_ENV%'==='production'?'vendors.min.js':'vendors.js'"
+    ></script>
 
-        <script type="text/javascript" charset="utf-8" src="static/<%= htmlWebpackPlugin.options.vendorsFilename %>"></script>
-        <!-- Favicon  -->
-        <link rel="icon" href="images/favicon.ico">
-    </head>
-    <body>
-        
-        <!-- Header -->
+    <!-- Styles -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
 
-        <header>
-            <div class="container grid">
-                <div class="text-container">
-                    <div class="image-container">
-                        <img src="images/Love_Minted.png" alt="LoveMinted Logo">
-                    </div> <!-- end of image-container -->
-                    <p class="subtitle">Eternalize Your Love Story with Unique NFTs & Domains</p><br> 
+    <script
+      type="text/javascript"
+      charset="utf-8"
+      src="static/<%= htmlWebpackPlugin.options.vendorsFilename %>"
+    ></script>
+    <!-- Favicon  -->
+    <link rel="icon" href="images/favicon.ico" />
+  </head>
+  <body>
+    <!-- Header -->
 
-                    <p class="signup">Sign up to receive updates about LoveMinted.</p>
-                    <form action="https://api.web3forms.com/submit" method="POST">
+    <header>
+      <div class="container grid">
+        <div class="text-container">
+          <div class="image-container">
+            <img src="images/Love_Minted.png" alt="LoveMinted Logo" />
+          </div>
+          <!-- end of image-container -->
+          <p class="subtitle">
+            Eternalize Your Love Story with Unique NFTs & Domains
+          </p>
+          <br />
 
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
-                        </div>
-                        <input type="hidden" name="access_key" value="afef2ee2-88fb-46a4-980c-3350e4e54f99">
-                        <div class="h-captcha" data-captcha="true"></div>                       
-                         <input type="hidden" name="subject" value="Another person is interested in LoveMinted">
+          <p class="signup">Sign up to receive updates about LoveMinted.</p>
 
-                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
-
-                        <button type="submit" class="form-control-submit-button">Subscribe</button>
-                    </form>
-                </div> <!-- end of text-container -->
-            </div> <!-- end of container -->
-        </header> <!-- end of header -->
-        <!-- end of header -->
-        <script src="https://web3forms.com/client/script.js" async defer></script>
-    </body>
+          <div class="form-group">
+            <iframe
+              class="form"
+              src="https://docs.google.com/forms/d/e/1FAIpQLSe7fq-6NniZrEw5oz5TKt3pxHKzvMvbEBhV2DQhj0mOH-dK7A/viewform?embedded=true"
+              width="600"
+              height="700"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              >Loading…</iframe
+            >
+          </div>
+        </div>
+        <!-- end of text-container -->
+      </div>
+      <!-- end of container -->
+    </header>
+  </body>
 </html>
